@@ -1,0 +1,89 @@
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS, jQyery, js -->                    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+  	<link rel="stylesheet" href="style.css">
+  	
+    <title>Main Page</title>
+</head>
+
+<body BGCOLOR="#FDF5E6">
+<!--  <h1 class="text-center">Main Page</h1>-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fabflix</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="main.html">MAIN</a></li>
+      <li><a href="shoppingCart.html">CART</a></li>
+    </ul>
+    <!--  
+    <ul class="nav navbar-nav navbar-right">
+	    <form class="navbar-form navbar-right" id="search_form" ACTION="#" METHOD="GET">
+	      <div class="form-group">
+	        <input type="text" name="title" class="form-control" placeholder="Search for Title" >
+	      </div>
+	      <button type="submit" class="btn btn-default">Go</button>
+	    </form>
+	</ul>
+	-->
+  </div>
+</nav>
+
+
+<!-- <form>
+    <p class="text-right"><input type="button" value="Check out" onclick="window.location.href='shoppingCart.html'" /></p>
+</form> -->
+
+<div class="text-center">
+<form id="search_form" ACTION="#" METHOD="GET">
+	<h3>Advanced Search: </h3>
+    Movie title: <input TYPE="TEXT" name="title"  id="autocomplete"> <br><br>
+    Publish year:  <input TYPE="TEXT" name="year"> <br><br>
+    Director: <input TYPE="TEXT" name = "director"> <br><br>
+    Star: <input TYPE="TEXT" name = "starname"> <br><br>
+
+	<select name="sort">
+	<option value="title">title</option>
+	<option value="rating">rating</option>
+	</select>
+	
+	<select name="order">
+	<option value="ASC">ASC</option>
+	<option value="DESC">DESC</option>
+	</select>
+	<br><br>
+	<p class="text-center"><input TYPE="SUBMIT" VALUE="SEARCH" class="btn btn-info btn-xs"></p>
+	</form>
+	<br>
+	
+	<form id="browse_genre">
+	</form>
+	<br><br>
+	<form id="browse_name">
+	</form>
+</div>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include jquery autocomplete JS  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+<!-- include our own JS file -->
+<script src="./main.js"></script> 
+<script src="./advanced_search.js"></script> 
+
+
+</body>
+</html>

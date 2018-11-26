@@ -1,0 +1,63 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS, jQyery, js -->                    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+    <title>Customer Information Check</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fabflix</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="main.html">MAIN</a></li>
+      <li class="active"><a href="#">Customer Info</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Set the method to POST to avoid username/password showing on URL
+     Disable the default action because our JS function will handle it. -->
+<form id="info_form" method="post" action="#">
+<div class="container">
+
+    <p class="text-center"><label><b>First Name</b></label>
+    <input type="text" name="firstname"></p>
+    <br>
+    <p class="text-center"><label><b>Last Name</b></label>
+    <input type="text" name="lastname"></p>
+    <br>
+    <p class="text-center"><label><b>Credit Card No</b></label>
+    <input type="text" name="ccId"></p>
+    <br>
+    <p class="text-center"><label><b>Credit Card Expiration date</b></label>
+    <input type="date" name="date"> (Eg: YYYY-MM-DD)</p>
+    <br>
+    <p class="text-center"><label><b>Address</b></label>
+    <input type="text" name="address"></p>
+    <br>
+    
+    <p class="text-center"><input type="submit" value="submit" class="btn btn-info"></p>
+</div>
+</form>
+<br>
+<p class="text-danger"><h4 id="info_error_message" class="text-center" ></h4></p>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./cus_info.js"></script>
+
+</body>
+</html>

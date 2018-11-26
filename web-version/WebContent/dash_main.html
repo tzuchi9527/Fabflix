@@ -1,0 +1,66 @@
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS, jQyery, js -->                    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+    <title>Main Page</title>
+</head>
+
+<body BGCOLOR="#FDF5E6">
+<!--  <h1 class="text-center">Main Page</h1>-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fabflix</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">MAIN Employee</a></li>
+      <li><a href="dash_metaData">MetaData</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="text-center">
+	<form id="add_star" ACTION="#" METHOD="GET">
+		<h3>New Star: </h3>
+	    Star name: <input TYPE="TEXT" name="starname"> (require)<br><br>
+	    Birth Year: <input TYPE="TEXT" name="year"> (optional) <br><br>
+	
+		<p class="text-center"><input TYPE="SUBMIT" VALUE="INSERT" class="btn btn-info btn-xs"></p>
+		
+	</form>
+</div>
+<p id="add_star_message" class="text-center"></p>
+
+<div class="text-center">
+	<form id="add_movie" ACTION="#" METHOD="GET">
+		<h3>New Movie: </h3>
+	    Movie Title: <input TYPE="TEXT" name="title"> <br><br>
+	    Year: <input TYPE="TEXT" name="year1"> <br><br>
+	   	Director <input TYPE="TEXT" name="director"> <br><br>
+	    Star name: <input TYPE="TEXT" name="star"> <br><br>
+	    Genre: <input TYPE="TEXT" name="genre"> <br><br>
+	
+		<p class="text-center"><input TYPE="SUBMIT" VALUE="INSERT" class="btn btn-info btn-xs"></p>
+	</form>
+</div>
+<p id="add_movie_message" class="text-center"></p>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./dash_insert.js"></script> 
+
+
+</body>
+</html>

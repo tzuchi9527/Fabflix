@@ -1,0 +1,66 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load single-star.js to populate the data into empty elements.
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS, jQyery, js -->                    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Single Movie</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fabflix</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="main.html">MAIN</a></li>
+      <li class="active"><a href="#">Movie Info</a></li>
+      <li><a href="shoppingCart.html">CART</a></li>
+    </ul>
+        
+  </div>
+</nav>
+
+<!-- H3 body is left empty here, will be populated with the data retrieved with single-star.js -->
+<!-- single-star.js will find this html element by it's id "star_info" -->
+<div class="container">
+	<p class="text-center">
+		<h3 id="movie_info"></h3>
+		<h3 id="genres_info"></h3>
+		<h3 id="stars_info"></h3>
+		<h3 id="add_item"></h3>
+		<h3 id="checkout"></h3>
+	</p>
+</div>
+
+<table id=movie_table class="table table-striped">
+
+    <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+    <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+    <tbody id=movie_table_body></tbody>
+</table>
+
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="singleMovie.js"></script>
+</body>
+
+
+</html>
